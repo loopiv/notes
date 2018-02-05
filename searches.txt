@@ -1,4 +1,5 @@
 
 # To search between two strings, but not including the strings (E.g., mod_security)
+# https://stackoverflow.com/questions/6109882/regex-match-all-characters-between-two-strings#6110113
 
-grep <IP address> apache_error_ssl.log | grep -o -P '(?<=\[id\ ")(.*?)(?=\"\])'
+  grep <IP address> apache_error_ssl.log | grep -o -P '(?<=\[id\ ")(.*?)(?=\"\])'
