@@ -1,0 +1,4 @@
+
+# To search between two strings, but not including the strings (E.g., mod_security)
+
+grep <IP address> apache_error_ssl.log | grep -o -P '(?<=\[id\ ")(.*?)(?=\"\])'
